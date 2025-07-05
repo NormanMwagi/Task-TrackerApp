@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": "42ce5922-ddf8-4147-abe3-f4508278af73",
+      "name": "Norman Mwagi",
+      "email": "normanmwagi23@gmail.com",
+      "password": "Manchester",
+      "confirmPassword": "Manchester"
+    },
+    {
+      "id": "ab506330-69e4-42ce-ac2e-b5abb48819eb",
+      "name": "sam moturi",
+      "email": "sammoturi@2gmail.com",
+      "password": "Manchester",
+      "confirmPassword": "Manchester"
+    },
+    {
+      "id": "dcd2",
+      "name": "spprt host",
+      "email": "normanspprt@gmail.com",
+      "password": "Mambakobe",
+      "confirmPassword": "Mambakobe"
+    }
+  ]
+}
