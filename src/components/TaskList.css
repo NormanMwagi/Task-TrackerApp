@@ -1,0 +1,131 @@
+.task-list {
+  display: grid;
+  gap: 20px;
+}
+
+.task-item {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.task-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.task-item.completed {
+  opacity: 0.7;
+  background: #f7fafc;
+}
+
+.task-content {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.task-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.task-checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #667eea;
+}
+
+.task-title {
+  margin: 0;
+  color: #2d3748;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.task-item.completed .task-title {
+  text-decoration: line-through;
+  color: #718096;
+}
+
+.task-description {
+  color: #4a5568;
+  margin: 0 0 12px 0;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.task-meta {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 12px;
+}
+
+.task-date {
+  color: #718096;
+}
+
+.task-status {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.task-status.pending {
+  background: #fef5e7;
+  color: #d69e2e;
+}
+
+.task-status.completed {
+  background: #f0fff4;
+  color: #38a169;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.edit-button,
+.delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  font-size: 16px;
+}
+
+.edit-button:hover {
+  background: #edf2f7;
+}
+
+.delete-button:hover {
+  background: #fed7d7;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #718096;
+}
+
+.empty-state p {
+  font-size: 16px;
+  margin: 0;
+} 

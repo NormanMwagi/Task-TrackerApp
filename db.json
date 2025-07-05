@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john@example.com",
+      "password": "password123"
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Complete React Project",
+      "description": "Finish the task tracker app with authentication",
+      "completed": false,
+      "userId": 1,
+      "createdAt": "2024-01-15T10:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "title": "Learn Hooks",
+      "description": "Study React hooks and Context API",
+      "completed": true,
+      "userId": 1,
+      "createdAt": "2024-01-14T09:00:00.000Z"
+    }
+  ]
+} 
