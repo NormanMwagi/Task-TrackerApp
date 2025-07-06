@@ -24,6 +24,14 @@
   opacity: 0.7;
   background: #f7fafc;
 }
+.task-item.overdue {
+  border-left: 4px solid #e11;
+}
+.task-status.overdue {
+  color: #e11;
+  font-weight: 600;
+}
+
 
 .task-content {
   flex: 1;

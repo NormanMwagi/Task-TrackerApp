@@ -1,15 +1,21 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "name": "John Doe",
       "email": "john@example.com",
       "password": "password123"
+    },
+    {
+      "id": "7b9b",
+      "name": "Norman Mwagi",
+      "email": "normanmwagi23@gmail.com",
+      "password": "Mambakobe824."
     }
   ],
   "tasks": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Complete React Project",
       "description": "Finish the task tracker app with authentication",
       "completed": false,
@@ -17,12 +23,35 @@
       "createdAt": "2024-01-15T10:00:00.000Z"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Learn Hooks",
       "description": "Study React hooks and Context API",
       "completed": true,
       "userId": 1,
       "createdAt": "2024-01-14T09:00:00.000Z"
+    },
+    {
+      "id": "84cc",
+      "title": "Learn aws",
+      "description": "to learn aws ec2",
+      "dueDate": "2025-07-10T00:00:00.000Z",
+      "createdAt": "2025-07-06T19:10:18.159Z",
+      "userId": "7b9b",
+      "completed": false
+    },
+    {
+      "title": "Watch series",
+      "description": "Watch ginny and georgia",
+      "dueDate": "2025-07-04T00:00:00.000Z",
+      "createdAt": "2025-07-06T19:11:10.070Z",
+      "id": "4abb"
+    },
+    {
+      "title": "Go for a walk",
+      "description": "Go for a walk at karura forest",
+      "dueDate": "2025-07-25T00:00:00.000Z",
+      "createdAt": "2025-07-06T19:28:27.277Z",
+      "id": "60e4"
     }
   ]
-} 
+}
