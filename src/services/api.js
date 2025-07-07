@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 
-const API_BASE_URL = 'http://localhost:3001';
+const API_BASE_URL = 'https://jsonserver-6tdl.onrender.com/';
 
 const api = axios.create({
   baseURL: API_BASE_URL,

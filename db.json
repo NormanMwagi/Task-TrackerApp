@@ -1,12 +1,6 @@
 {
   "users": [
     {
-      "id": "1",
-      "name": "John Doe",
-      "email": "john@example.com",
-      "password": "password123"
-    },
-    {
       "id": "7b9b",
       "name": "Norman Mwagi",
       "email": "normanmwagi23@gmail.com",
