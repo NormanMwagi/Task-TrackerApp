@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { useAuth } from '../contexts/AuthContext';
+import { useAuth } from '../contexts';
 import { tasksAPI } from '../services/api';
 import TaskForm from './TaskForm';
 import TaskList from './TaskList';
@@ -179,4 +179,4 @@ const Dashboard = () =>
   );
 };
 
-export default Dashboard; 
+export default Dashboard;

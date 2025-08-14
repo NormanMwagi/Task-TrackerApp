@@ -57,8 +57,9 @@ const Register = () =>
       };
 
       const newUser = await authAPI.register(userData);
+      // newUser should not contain password
       toast.success('Registration successful');
-      login(newUser);
+      login({ id: newUser.id, name: newUser.name, email: newUser.email });
       navigate('/dashboard');
     } catch (err)
     {
@@ -144,4 +145,4 @@ const Register = () =>
   );
 };
 
-export default Register; 
+export default Register;

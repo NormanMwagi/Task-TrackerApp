@@ -1,4 +1,3 @@
-
 # Project Title
 
 Todo Tracker is a task management app that lets users add, edit, delete, and track todos with due dates. It features secure authentication, allowing access to the dashboard only when logged in. The dashboard also includes a progress report showing total tasks, completed tasks, completion rate, and overdue items.
@@ -47,3 +46,28 @@ Install my-project with npm
 ## Acknowledgements
 
 - Special thanks to [Steve](https://github.com/Asumba-lab) for his collaboration and valuable contributions to this project.
+
+---
+
+## Local dev server (Express + JWT)
+
+A minimal Express auth server has been added for local development. It uses `db.json` for persistence and supports register/login with JWTs.
+
+Start the server:
+
+```bash
+cd server
+npm install
+npm run dev
+```
+
+Server endpoints:
+- POST /auth/register -> { token, user }
+- POST /auth/login -> { token, user }
+- GET /tasks?userId=... -> public read
+- POST /tasks, PUT /tasks/:id, PATCH /tasks/:id, DELETE /tasks/:id -> protected (require Authorization header: `Bearer <token>`)
+
+Important:
+- This server is for local/demo use only. Do not deploy it to production.
+- Set a secure JWT secret in production via the `JWT_SECRET` env var.
+- The frontend reads `VITE_API_BASE_URL` to determine the API base URL. Set it when deploying the frontend.

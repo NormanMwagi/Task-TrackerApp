@@ -33,11 +33,15 @@ const Login = () =>
 
     try
     {
-      const user = await authAPI.login(formData.email, formData.password);
+      const result = await authAPI.login(formData.email, formData.password);
+      // result may be { token, user } or a user object (fallback)
+      const user = result?.user ?? result;
+      const token = result?.token ?? result?.token;
 
       if (user)
       {
-        login(user);
+        // Pass only safe fields to login
+        login({ id: user.id, name: user.name, email: user.email, token });
         toast.success('Login successful');
         navigate('/dashboard');
       } else
@@ -45,7 +49,7 @@ const Login = () =>
         setError('Invalid email or password');
         toast.error('Invalid email or password');
       }
-    } catch (err)
+    } catch
     {
       setError('Login failed. Please try again.');
       toast.error('Login failed. Please try again.');
@@ -99,4 +103,4 @@ const Login = () =>
   );
 };
 
-export default Login; 
+export default Login;
